@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 2em;
+  border-bottom: 1px solid #ccc;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.nav-left button,
+.nav-right button {
+  padding: 0.5em 1.2em;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-left button:hover,.nav-right button:hover{
+  background-color: black;
+  color: white;
+}
+.nav-right button span {
+  font-weight: normal;
+}
+
+.nav-center h1 {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Main Product Layout */
+.product-container {
+  /* border: red solid 2px ; */
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding: 3em 5em;
+  gap: 3em;
+  /* flex-wrap: wrap; */
+}
+
+/* Left Column */
+.product-left {
+  /* border: red solid 2px ; */
+
+  display: flex;
+  gap: 1em;
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.thumbnail img {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  border: 2px solid #eee;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.thumbnail img:nth-child(1) {
+  border: 2px solid black;
+}
+  
+
+
+.main-image img {
+  width: 400px;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+/* Right Column */
+.product-right {
+  /* border: blue solid 2px ; */
+  /* align-items: self-start; */
+  max-width: 400px;
+}
+
+.product-right h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+.quantity-selector {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.quantity-selector button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid black;
+  font-size: 1.2em;
+  font-weight: bold;
+  background: transparent;
+  cursor: pointer;
+}
+
+.quantity-selector button:hover {
+  background-color: black;
+  color: white;
+  transition: .5s;
+}
+
+.quantity-selector span {
+  font-size: 1.2em;
+}
+
+.add-btn {
+  width: 100%;
+  padding: 1em;
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 25px;
+  font-weight: bold;
+  margin-bottom: 1.5em;
+  cursor: pointer;
+}
+
+.add-btn:hover {
+  background-color: black;
+  color: white;
+  transition: .5s;
+}
+.desc {
+  margin-bottom: 1.5em;
+  font-size: 0.95em;
+}
+
+.details summary {
+  font-weight: bold;
+  cursor: pointer;
+  padding-bottom: 0.5em;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.details p {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+/* ------------------- Footer ------------------- */
+
+.footer {
+  background: #10aa5f;
+  color: black;
+  padding: 4em 2em 2em;
+  font-family: sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2em;
+  align-items: flex-start;
+}
+
+.footer-logo {
+  width: 200px;
+  height: 200px;
+  background: #f44a1c;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer-logo .top-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  margin-bottom: 0.5em;
+}
+
+.footer-logo .middle-text {
+  font-size: 1.2em;
+}
+
+.footer-logo .bottom-text {
+  margin-top: 0.5em;
+}
+
+.footer-center h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.3;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.6em;
+  font-size: 0.95em;
+}
+
+.footer-note {
+  max-width: 300px;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.footer-note strong {
+  font-weight: bold;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3em;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  margin-right: 1.5em;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 0.95em;
+}
+
+.scroll-top {
+  width: 35px;
+  height: 35px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2em;
+  cursor: pointer;
+}
